@@ -88,15 +88,15 @@ def train(args):
     
     ### directory
     # this is the directory where you save your preprocessing data from clinical trials
-    ct_dir = '/project/pi_rachel_melamed_uml_edu/Jianfeng/Drug_combinations/06122025/clinical_trail_preprocessing/'
+    ct_dir = ct_dir
     # this is the directory where you have the cleaned drkg embeddings for drugs and conditions
-    drkg_dir = '/project/pi_rachel_melamed_uml_edu/Jianfeng/Drug_combinations/06122025/drkg_embedding_preprocessing/'
+    drkg_dir = drkg_dir
     # this is the directory where you save the drugs and conditions embeddings after training and finetuning
-    emb_dir = '/project/pi_rachel_melamed_uml_edu/Jianfeng/Drug_combinations/06122025/embedding_training_and_finetuning/'
+    emb_dir = emb_dir
     # this is the directory where you save the cdcdb triplets tables
-    cdcdb_dir = '/project/pi_rachel_melamed_uml_edu/Jianfeng/Drug_combinations/06122025/cdcdb_triplets_preprocessing/'
+    cdcdb_dir = cdcdb_dir
     # this is the directory where you plan to save the model running and evaluation results
-    save_dir = '/project/pi_rachel_melamed_uml_edu/Jianfeng/Drug_combinations/06122025/final_model/results/'
+    save_dir = save_dir
 
     
     #####-----read data from clinical trials-----#####
