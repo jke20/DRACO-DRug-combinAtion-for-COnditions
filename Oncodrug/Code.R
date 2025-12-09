@@ -4,9 +4,9 @@ library(readxl)
 
 ### necessary reference profiles preparation
 # working directory
-working_dir = "/project/pi_rachel_melamed_uml_edu/Jianfeng/Drug_combinations/06122025/Oncodrug/"
+working_dir = working_dir
 # this directory is where you download your umls MRCONSO.RRF reference file
-mrconso_dir = "/project/pi_rachel_melamed_uml_edu/Panos/drug_combo_jianfeng/CT_20250605/"
+mrconso_dir = mrconso_dir
 
 # read UMLS zip file
 rrf = fread(paste0(mrconso_dir, "umls-2025AA-mrconso.zip"), sep = "|", quote = "")
@@ -21,7 +21,7 @@ rrf$STR_lowercase = tolower(rrf$STR)
 rrf_sub <- rrf[, .(CODE, STR_lowercase)]
 
 # drug bank vocabulary unzip csv file
-db_file = "/project/pi_rachel_melamed_uml_edu/Jianfeng/Drug_combinations/06122025/final_result_tables_mapping/drugbank vocabulary.csv"
+db_file = "./final_result_tables_mapping/drugbank vocabulary.csv"
 # read DrugBank csv zip file
 db_csv <- read.csv(db_file, sep = ",", header = TRUE, stringsAsFactors = FALSE)
 
