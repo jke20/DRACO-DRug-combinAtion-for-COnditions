@@ -5,6 +5,8 @@ Code and data for the paper: A Knowledge Graph Approach To Discovering Drug Comb
 - Supplementary tables 1: clinical_trials_with_proposed_second_drugs_w_names.csv
 - Supplementary tables 2: top_3_triplets_per_condition_w_names.csv
 - Supplementary tables 3: triplets_pass_threshold_w_names.csv
+#### Note:
+- Because users may store files in different locations, the provided files allow flexible directory settings. If you want all files to be stored in one folder, you can define multiple directories as the same path.
 ---
 
 ## Workflow
